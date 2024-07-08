@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div id="div"></div>
+    <img data-aos="fade-right"src="p1.jpeg" alt="">
+    <header id="head">
+        <div>Portfolio</div>
+        <div id="top" class="top">
+           <a id="one" href="#div"><div>Home</div></a> 
+            <a id="one" href="#second"><div>About</div></a>
+            <a id="one" href="#ser"><div>Services</div></a>
+            <a id="one" href="#four"><div>Hire</div></a>
+            <a id="one" href="#contact"><div>Contact</div></a>
+            
+        </div>
+    </header>
+    <div id="home">
+        <div data-aos="fade-right">Hello,my name is</div>
+        <div id="name"data-aos="fade-left">Shashank</div>
+        <div data-aos="fade-up">I'm a Web Developer</div>
+    </div>
+    <div data-aos="fade-down" id="second">
+        <div id="aboutme" data-aos="fade-right">About Me</div>
+        <div id="dev" data-aos="fade-out"> Web Developer
+            <div id="dev1"data-aos="fade-out">& Designer</div>
+        </div>
+        <div id="dev2">
+            I am a front-end web developer.I can provide clean code <br>and pixel perfect design.I also make the website more & more <br>interactive with web animations.I can provide clean <br>code and pixel perfect design. I also make the website more & more <br>interactive with web animations.A responsive design makes<br> your website accessible to all users, regardless of their device.
+        </div>
+        <a id="lt" href="">Let's talk</a>
+    </div>
+    <div id="third">
+        <div data-aos="fade-down"id="ser">Services</div>
+        
+            <a href=""><div id="box1">
+                <div data-aos="fade-right"id="Build">
+                    <i id="computer" class="fa-solid fa-desktop"></i><br><p>Build a website with me</p></div>
+            </div></a>
+           <a href=""><div id="box2">
+            <div id="crash"data-aos="fade-left">
+                <i id="book" class="fa-solid fa-book"></i><br>Take a <br> crash course</div>
+           </div></a> 
+        
+        
+    </div>
+    <div id="four" data-aos="fade-left">
+        Let me get you a beautiful website!! <br><br>
+        <a id="f" href="">Hire me</a>
+    </div>
+    <footer data-aos="fade-right">Follow me on
+        <i id="ic" class="fa-brands fa-x-twitter"></i>
+        <i id="ic" class="fa-brands fa-facebook"></i>
+        <i id="ic" class="fa-brands fa-instagram"></i>
+        <div id="contact">
+            <i id="ph" class="fa-solid fa-phone"></i>+91-1234567890 <br>
+            <i id="mail" class="fa-solid fa-envelope"></i>new@gmail.com
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 50,
+        duration:1500,
+      });
+    </script>
+    <script>
+        
+let n=document.getElementById("head");
+let lastScroll=window.scrollY;
+
+document.addEventListener("scroll",()=>{
+  if(lastScroll<window.scrollY){
+   // n.style.transform="scale(0)";
+   n.style.top="-70px";
+   
+   console.log("Going down");
+  }
+  else{
+   console.log("Going up");
+   n.style.top="0px";
+  
+   // n.style.transform="scale(1)";
+  }
+  lastScroll=window.scrollY;
+});
+    </script>
+</body>
+</html>
